@@ -1,0 +1,130 @@
+<html>
+<head>
+    <title>ITI REGISTRATION | Register</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="LOGO.png" alt="ITI Logo">
+            </div>   
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about us.html">ABOUT US</a></li>
+                <li><a href="#">TRADE</a></li>
+                <li class="active"><a href="register.html">REGISTRATION</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </div>
+        
+        <div class="title">
+            <h1>REGISTRATION</h1>
+        </div>
+        
+        <!-- Registration Form -->
+        <div class="registration-container">
+            <h2>REGISTRATION</h2>
+            <form action="#" method="POST">
+                <!-- Name Fields -->
+                <div class="name-row">
+                    <div class="input-group">
+                        <label>First Name *</label>
+                        <input type="text" placeholder="Enter first name" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Last Name *</label>
+                        <input type="text" placeholder="Enter last name" required>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="input-group">
+                    <label>Email Address *</label>
+                    <input type="email" placeholder="aryan@email.com" required>
+                </div>
+
+                <!-- Phone -->
+                <div class="input-group">
+                    <label>Phone Number *</label>
+                    <input type="tel" placeholder="+91 98765 43210" required>
+                </div>
+
+                <!-- Date of Birth -->
+                <div class="input-group">
+                    <label>Date of Birth *</label>
+                    <input type="date" required>
+                </div>
+
+                <!-- Gender -->
+                <div class="input-group">
+                    <label>Gender *</label>
+                    <div class="radio-group">
+                        <div>
+                            <input type="radio" name="gender" id="male" value="male" required>
+                            <label for="male">Male</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="gender" id="female" value="female">
+                            <label for="female">Female</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="gender" id="other" value="other">
+                            <label for="other">Other</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trade Selection -->
+                <div class="input-group">
+                    <label>Select Trade *</label>
+                    <select required>
+                        <option value="" disabled selected>Choose your trade</option>
+                        <option value="copa">COPA (Computer Operator and Programming Assistant)</option>
+                        <option value="electrician">Electrician</option>
+                        <option value="fitter">Fitter</option>
+                        <option value="welder">Welder</option>
+                        <option value="mechanic">Mechanic Motor Vehicle (MMV)</option>
+						<option value="welder">Diesel mechanic</option>
+						<option value="rac">Refrigeration and Air Conditioning (RAC)</option>
+                    </select>
+                </div>
+
+                <!-- Address -->
+                <div class="input-group">
+                    <label>Address</label>
+                    <textarea rows="2" placeholder="Enter your full address"></textarea>
+                </div>
+
+                <!-- Password -->
+                <div class="input-group">
+                    <label>Create Password *</label>
+                    <input type="password" placeholder="Minimum 8 characters" required>
+                </div>
+
+                <!-- Confirm Password -->
+                <div class="input-group">
+                    <label>Confirm Password *</label>
+                    <input type="password" placeholder="Re-enter password" required>
+                </div>
+
+                <!-- Terms & Conditions -->
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="register-submit">Register Now</button>
+
+                <!-- Login Link -->
+                <div class="login-link">
+                    Already have an account? <a href="#">Login here</a>
+                </div>
+            </form>
+        </div>
+    </header>
+</body>
+</html>
